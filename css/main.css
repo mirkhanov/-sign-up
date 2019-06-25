@@ -1,0 +1,204 @@
+
+@font-face{
+	font-family: 'sf-regular';
+	src: url('../fonts/SF-UI-Display-Regular.ttf') format('truetype');
+	font-weight: normal;
+}
+
+@font-face{
+	font-family: 'sf-bold';
+	src: url('../fonts/SF-UI-Display-Bold.ttf') format('truetype');
+	font-weight: bold;
+}
+
+@font-face{
+	font-family: 'sf-thin';
+	src: url('../fonts/SF-UI-Display-Thin.ttf') format('truetype');
+	font-weight: 100;
+}
+
+
+
+
+/*Background*/
+body{
+	background-image: url('/app/log/bg.jpg');
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	height: 100vh;
+	font-family: 'sf-regular';
+	font-weight: normal;
+}
+h1{
+	color:  rgba(255,93,177,1);
+	font-family: 'sf-thin';
+	padding-top:  35px;
+	font-weight: 100;
+
+}
+.box{
+	width: 350px;
+	height: 500px;
+	padding: 30px;
+	background: #fff;
+	border-radius: 12px;
+	display: flex;
+	flex-direction: column;
+	z-index: 2;
+
+
+}
+.box header{
+	text-transform: uppercase;
+}
+.box main{
+	flex: 1;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	
+}
+.box main form {
+	margin: 0;
+	padding: 0;
+	display: flex;
+	flex-direction: column;
+	
+	width: 100%;
+}
+/*Submit*/
+.box main form input[type="submit"]{
+	align-self: flex-end;
+	border: 0;
+	background: none;
+	text-align: center;
+	border: 1px solid;
+	padding: 5px;
+	border-radius: 24px;
+	cursor: pointer;
+	width: 30%;
+	margin-top: 45px;
+	color:  rgba(255,93,177,1);
+
+
+
+
+}
+.box main form input[type="submit"]:hover{
+	background: pink;
+	transition: 0.5s;
+}
+
+.box main form input{
+	margin-bottom: 20px;
+}
+/*Input*/
+.box main form input[type="text"],.box input[type="password"]{
+	border: 0;
+	border-bottom: 1px solid #ddd;
+	width: 100%;
+	padding: 5px 0;
+	background: none;
+	display: block;
+	outline: none;
+	font-size: 13px;
+	
+}
+.form-check-label{
+	font-size: 13px;
+	padding-left: 20px;
+	padding-top: 5px;
+}
+/*Checkbox*/
+.form-check-input{
+	font-size: 13px;
+}
+/*Icons*/
+.fa-user::before{
+	font-size: 20px;
+	color: #ddd;
+    border-bottom: 1px solid;
+    padding-bottom: 9px;
+
+}
+.flex{
+	display: flex;
+}
+.fa-lock::before{
+	font-size: 30px;
+	color: #fff;
+    padding-bottom: 9px;
+
+}
+.flex1{
+	display: flex;
+}
+.flex2{
+	display: flex;
+}
+.fa-envelope::before{
+	font-size: 20px;
+	color: #ddd;
+    padding-bottom: 9px;
+
+}
+.box2 h1{
+	font-size: 13px;
+	color: white;
+    align-items: center;
+
+}
+.box2 p{
+	font-size: 10px;
+	color: white;
+	
+}
+.box2{
+	width: 400px;
+	height: 360px;
+	border-radius: 12px;
+	text-align: center;
+	margin: -48px;
+	z-index: 1;
+	align-self: center;
+	background: rgba(124,169,247,1);
+	background: -moz-linear-gradient(-45deg, rgba(124,169,247,1) 0%, rgba(240,132,218,1) 100%);
+	background: -webkit-gradient(left top, right bottom, color-stop(0%, rgba(124,169,247,1)), color-stop(100%, rgba(240,132,218,1)));
+	background: -webkit-linear-gradient(-45deg, rgba(124,169,247,1) 0%, rgba(240,132,218,1) 100%);
+	background: -o-linear-gradient(-45deg, rgba(124,169,247,1) 0%, rgba(240,132,218,1) 100%);
+	background: -ms-linear-gradient(-45deg, rgba(124,169,247,1) 0%, rgba(240,132,218,1) 100%);
+	background: linear-gradient(135deg, rgba(124,169,247,1) 0%, rgba(240,132,218,1) 100%);
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#7ca9f7', endColorstr='#f084da', GradientType=1 );
+
+}	
+
+	
+.box2 header button{
+	font-size: 11px;
+	border: 1px solid ;
+	border-radius: 24px;
+	text-align: center;
+	color: white;
+	margin-top: 10px;
+	background: none;
+	padding-top:  8px;
+	padding-bottom: 8px;
+	padding-left: 20px;
+	padding-right: 20px;
+
+
+
+}
+.box2 header button[type="submit"]:hover{
+	background: #6453c6;
+	transition: 0.5s;
+}
+
+
+
+@media screen and (max-width: 480px) {
+	body{
+		flex-direction: column;
+	}
+}
