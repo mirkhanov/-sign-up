@@ -22,7 +22,7 @@
 
 /*Background*/
 body{
-	background-image: url('/app/log/bg.jpg');
+	background-image: url('/-sign-up/log/bg.jpg');
 	display: flex;
 	align-items: center;
 	justify-content: center;
@@ -190,10 +190,7 @@ h1{
 
 
 }
-.box2 header button[type="submit"]:hover{
-	background: #6453c6;
-	transition: 0.5s;
-}
+
 
 
 
