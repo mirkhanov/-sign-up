@@ -199,7 +199,6 @@ h1{
 img{
 	width: 100px;
 	height: 100px;
-	margin-top: 15%;
 	background: #fff;
 	 border-radius: 50%;
 	 align-self: center;
@@ -211,12 +210,46 @@ img{
 		flex-direction: column;
 	}
 }
-#menu .toggle-btn{
-	left: 420px;
-	padding: 10px;
-	cursor: pointer;
-	top: 20px;
-	
+
+#menuToggle {
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-end;
+  padding: 10px;
 }
 
+#menuToggle input {
+  display: flex;
+  width: 60px;
+  height: 60px;
+  position: absolute;
+  cursor: pointer;
+  opacity: 0; /* hide input */
+  z-index: 1; /* top of the menu */
+}
 
+#menuToggle span{
+  width: 55px;
+  height: 8px;
+  margin-bottom: 10px;
+  background: #7f8fa6;
+  border-radius: 4px;
+  -webkit-transition: all .5s cubic-bezier(.08,.81,.87,.71);
+  -moz-transition: all .5s cubic-bezier(.08,.81,.87,.71);
+  -ms-transition: all .5s cubic-bezier(.08,.81,.87,.71);
+  -o-transition: all .5s cubic-bezier(.08,.81,.87,.71);
+  transition: all .5s cubic-bezier(.08,.81,.87,.71);
+}
+
+.hideBox{
+	margin-left: -290px;
+	width: 310px;
+	transition-duration: 1s;
+}
+.showBox{
+    margin-left: -48px;
+	width: 400px;
+	transition-duration: 1s;
+}
