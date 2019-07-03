@@ -212,21 +212,25 @@ img{
 		flex-direction: column;
 	} 
 	.box2{
-		margin-left: -50px;
-		margin-top: -347px;
-		width: 388px;
+		margin-left: 0px;
+		margin-top: -350px;
+		width: 300px;
+		margin-right: 0!important;
+
 	}
 	.hideBox{
-		
-	margin-top: -450px;
+	margin-left: 0!important;
+	margin-top: -350px;
 	width: 0px;
 	transition-duration: 2s;
+	width: 300px!important;
 
 	}
 	.showBox{
     margin-top: -48px;
-	width: 400px;
+	width: 390px!important;
 	transition-duration: 2s;
+	margin-left: 0!important;
 }
  
 }
